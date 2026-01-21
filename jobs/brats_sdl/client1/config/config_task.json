@@ -1,0 +1,23 @@
+{
+    "dataset_id": 1,
+    "path_config": "src/path_conf.json",
+    "notes":"18brats",
+    "model": {
+        "path": "dynunet",
+        "name": "create_cnn_mod_dynunet_function",
+        "args": {
+            "in_channels": 32,
+            "out_channels": 3,
+            "mod_channel": 4
+        },
+        "config_type": "dict"
+    },
+    "training": {
+        "use_half_precision": false,
+        "val_every": 1
+    },
+    "optimizer": {
+        "lr": 3e-4,
+        "weight_decay": 1e-5
+    }
+}

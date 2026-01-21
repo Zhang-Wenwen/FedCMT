@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+
+  "executors": [
+    {
+      "tasks": ["train", "submit_model", "validate"],
+      "executor": {
+        "id": "Executor",
+        "path": "learner_executor.LearnerExecutor",
+        "args": {
+          "learner_id": "learner"
+        }
+      }
+    }
+  ],
+  "task_result_filters": [
+  ],
+  "task_data_filters": [
+  ],
+  "components": [
+    {
+      "id": "learner",
+      "path": "learner.EncoderLearner",
+      "args": {
+        "task_config": "config/config_task.json",
+        "aggregation_steps": 250
+      }
+    }
+  ]
+}

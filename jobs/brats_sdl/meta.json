@@ -1,0 +1,9 @@
+{
+  "name": "multiorgan-segmentation",
+  "resource_spec": {},
+  "min_clients": 1,
+  "deploy_map": {
+    "server": ["server"],
+    "client1": ["client1"]
+  }
+}
