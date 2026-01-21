@@ -16,14 +16,14 @@ The code in this directory is released under Apache v2 License.
 
 ## Data Preparation
 Download the dataset and organize it according to the nnU-Net required directory structure. nnU-Net expects all datasets to follow a standardized format that includes raw images, labels, and dataset metadata
-
+```text
 nnUNet_raw/
 └── DatasetXXX_MyDataset/
     ├── imagesTr/
     ├── imagesTs/
     ├── labelsTr/
     ├── dataset.json
-
+```
 
 And then run the code for pre-processing:
 ```
